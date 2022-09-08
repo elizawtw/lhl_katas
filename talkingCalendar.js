@@ -5,43 +5,43 @@ const talkingCalendar = function(date) {
   let month = parseInt(newDate[1], 10);
   let day = parseInt(newDate[2], 10);
   let year = newDate[0];
-  let newMonth;
+  
   switch (month) {
     case 1:
-      newMonth = "January";
+      month = "January";
        break;
     case 2:
-      newMonth = "February";
+      month = "February";
       break;
     case 3:
-      newMonth = "March";
+      month = "March";
       break;
     case 4:
-      newMonth = "April";
+      month = "April";
       break;
     case 5:
-      newMonth = "May";
+      month = "May";
       break;
     case 6:
-      newMonth = "June";
+      month = "June";
       break;
     case 7:
-      newMonth = "July";
+      month = "July";
       break;
     case 8:
-      newMonth = "August";
+      month = "August";
       break;
     case 9:
-      newMonth = "September";
+      month = "September";
       break;
     case 10:
-      newMonth = "October";
+      month = "October";
       break;
     case 11:
-      newMonth = "November";
+      month = "November";
       break;
     case 12:
-      newMonth = "December";
+      month = "December";
       break;            
   }
 
@@ -55,7 +55,7 @@ const talkingCalendar = function(date) {
     day += 'th';
   }
 
-  newDate = `${newMonth} ${day}, ${year}`
+  newDate = `${month} ${day}, ${year}`
   return newDate;
 };
 
